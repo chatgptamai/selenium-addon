@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "selenium-addon",
+  "version": "1.0.0",
+  "name": "Selenium",
+  "description": "pvp and utility monster",
+  "authors": [
+    "massive"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/selenium-addon/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "dev.selenium.me.SeleniumAddon"
+    ]
+  },
+  "mixins": [
+    "selenium-addon.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "52,52,120",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": "${minecraft_version}",
+    "meteor-client": "*"
+  }
+}
